@@ -26,8 +26,9 @@ apt-get install vim
 
 Unfortunately this will get us the newer version of pip that has a new dependency resolver which causes the install take a lot of time, several hours infact, this is why we will use the constraints file
 
-pip3 install --upgrade pip
-python3 -m pip install -c constraints.txt .
+`pip3 install --upgrade pip`
+
+`python3 -m pip install -c constraints.txt .`
 
 While installing it says
 Collecting kiwisolver>=1.1.0 and keeps trying to download and verify all the versions of this package that satisfies the criteria >=1.1.0
