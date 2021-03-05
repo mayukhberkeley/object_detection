@@ -14,12 +14,15 @@ Check your l4t version, e.g. cat /etc/nv_tegra_release
 
 sudo docker run -it --rm --runtime=nvidia nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf1.15-py3
 apt update
-apt-get install protobuf-compiler python-pil python-lxml 
-apt-get install python-tk
+apt-get install protobuf-compiler python-pil python-lxml python-tk
 apt install git
 git clone https://github.com/tensorflow/models.git
 apt-get install vim
 ### you need to upgrade pip
+
+`$ cd /models/research/`
+`$ cp object_detection/packages/tf2/setup.py .`
+
 
 Unfortunately this will get us the newer version of pip that has a new dependency resolver which causes the install take a lot of time, several hours infact, this is why we will use the constraints file
 
