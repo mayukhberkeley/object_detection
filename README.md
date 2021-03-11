@@ -12,7 +12,8 @@ I am running on a Jetson Xavier NX, I got the latest l4t available at the time o
 Check your l4t version, e.g. 
 
 `$ cat /etc/nv_tegra_release`
-`# R32 (release), REVISION: 4.4, GCID: 23942405, BOARD: t186ref, EABI: aarch64, DATE: Fri Oct 16 19:37:08 UTC 2020`
+
+R32 (release), REVISION: 4.4, GCID: 23942405, BOARD: t186ref, EABI: aarch64, DATE: Fri Oct 16 19:37:08 UTC 2020
 
 `sudo docker run -it --rm --runtime=nvidia nvcr.io/nvidia/l4t-tensorflow:r32.5.0-tf1.15-py3`
 
